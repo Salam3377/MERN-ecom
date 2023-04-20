@@ -7,7 +7,6 @@ import Product from "../model/Product.js";
 import User from "../model/User.js";
 // import Coupon from "../model/Coupon.js";
 
-
 // //stripe instance
 const stripe = new Stripe(process.env.STRIPE_KEY);
 
@@ -30,7 +29,7 @@ export const createOrder = expressAsyncHandler(async (req, res) => {
 
 //   //Get the payload(customer, orderItems, shipppingAddress, totalPrice);
   const { orderItems, shippingAddress, totalPrice } = req.body;
-//   console.log(req.body);
+
 //   //Find the user
   const user = await User.findById(req.userAuthId);
 //   //Check if user has shipping address

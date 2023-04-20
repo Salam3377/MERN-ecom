@@ -23,8 +23,6 @@ export const createProductController = expressAsyncHandler(async(req,res) => {
             "Category not found, please create category first or check category name"
           )
     }
-
-   
     //find brand
     const brandFound = await Brand.findOne({
         name: brand?.toLowerCase(),
@@ -34,9 +32,7 @@ export const createProductController = expressAsyncHandler(async(req,res) => {
             "Brand not found, please create Brand first or check category name"
           )
     }
-
-
-
+    //CREATE product
     const product = await Product.create({
         name,
         brand,

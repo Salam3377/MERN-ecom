@@ -1,5 +1,6 @@
-import dotenv from 'dotenv'
-dotenv.config()
+// import dotenv from 'dotenv'
+// dotenv.config()
+require('dotenv').config()
 import Stripe from 'stripe'
 import express from 'express'
 import dbConnect from '../config/dbConnect.js' //cannot find module add extension .js

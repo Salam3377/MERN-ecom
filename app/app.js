@@ -1,7 +1,8 @@
 // import dotenv from 'dotenv'
 // dotenv.config()
 require('dotenv').config()
-import Stripe from 'stripe'
+// import Stripe from 'stripe'
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 import express from 'express'
 import dbConnect from '../config/dbConnect.js' //cannot find module add extension .js
 import userRoutes from '../routes/userRoutes.js'
@@ -27,7 +28,7 @@ const app = express()
 //stripe webhook
 
 // //stripe instance
-const stripe = new Stripe(process.env.STRIPE_KEY);
+// const stripe = new Stripe(process.env.STRIPE_KEY);
 
 // The library needs to be configured with your account's secret key.
 // Ensure the key is kept out of any version control system you might be using.

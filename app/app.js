@@ -1,9 +1,11 @@
 // import dotenv from 'dotenv'
 // dotenv.config()
+// import express from 'express'
+const express = require('express')
 require('dotenv').config()
 // import Stripe from 'stripe'
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
-import express from 'express'
+
 import dbConnect from '../config/dbConnect.js' //cannot find module add extension .js
 import userRoutes from '../routes/userRoutes.js'
 import { globalErrorHandler, notFound } from '../middlewares/globalErrorHandler.js'

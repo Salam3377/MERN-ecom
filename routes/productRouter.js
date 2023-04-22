@@ -1,4 +1,4 @@
-import exppress from "express";
+const express = require('express')
 import { createProductController, deleteProduct, getProductsController, getSingleProduct, updateProduct } from "../controllers/productController.js";
 import { isLoggedIn } from "../middlewares/isLoggedIn.js";
 import upload from "../config/fileUpload.js";
@@ -9,7 +9,7 @@ import isAdmin from "../middlewares/isAdmin.js";
 
 
 
-const productsRouter = exppress.Router();
+const productsRouter = express.Router();
 
 productsRouter.post('/', isLoggedIn, isAdmin, upload.array('files'), createProductController);
 productsRouter.get('/', getProductsController);

@@ -1,4 +1,4 @@
-import express from "express";
+const express = require('express')
 import { createBrand, getAllBrands, getSingleBrand, updateBrand, deleteBrand } from "../controllers/brandController.js";
 import { isLoggedIn } from "../middlewares/isLoggedIn.js";
 import isAdmin from "../middlewares/isAdmin.js";

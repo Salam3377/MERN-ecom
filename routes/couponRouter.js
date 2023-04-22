@@ -1,4 +1,4 @@
-import express from "express";
+const express = require('express')
 import { createCoupon, getAllCoupons, getCoupon, updateCoupon,deleteCoupon } from "../controllers/couponController.js";
 import { isLoggedIn } from "../middlewares/isLoggedIn.js";
 import isAdmin from "../middlewares/isAdmin.js";

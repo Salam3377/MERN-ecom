@@ -1,4 +1,4 @@
-import express from "express";
+const express = require('express')
 import { registerUserController, loginUserController, getUserProfileController, updateShippingAddress } from "../controllers/userController.js";
 import { isLoggedIn } from "../middlewares/isLoggedIn.js";
 

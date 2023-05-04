@@ -1,4 +1,5 @@
-const express = require('express')
+// const express = require('express')
+import express from 'express'
 import { createColor, getAllColors, getSingleColor, updateColor, deleteColor } from "../controllers/ColorController.js";
 
 import { isLoggedIn } from "../middlewares/isLoggedIn.js";

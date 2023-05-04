@@ -1,4 +1,5 @@
-const express = require('express')
+// const express = require('express')
+import express from 'express'
 import { createCategory, getAllCategories, getSingleCategory, updateCategory, deleteCategory } from "../controllers/categoryController.js";
 import { isLoggedIn } from "../middlewares/isLoggedIn.js";
 import catetgoryFileUpload from "../config/categoryUpload.js";

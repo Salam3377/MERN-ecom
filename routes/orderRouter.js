@@ -1,4 +1,5 @@
-const express = require('express')
+// const express = require('express')
+import express from 'express'
 import { createOrder, getAllOrders, getOrderStats, getSingleOrder, updateOrder } from "../controllers/orderController.js";
 import { isLoggedIn } from "../middlewares/isLoggedIn.js";
 

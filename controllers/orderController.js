@@ -1,7 +1,7 @@
 import expressAsyncHandler from "express-async-handler";
 // import dotenv from "dotenv";
 // dotenv.config();
-require('dotenv').config()
+// require('dotenv').config()
 import Stripe from "stripe";
 import Order from "../model/Order.js";
 import Product from "../model/Product.js";

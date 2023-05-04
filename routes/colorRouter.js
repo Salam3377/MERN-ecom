@@ -1,6 +1,6 @@
 // const express = require('express')
 import express from 'express'
-import { createColor, getAllColors, getSingleColor, updateColor, deleteColor } from "../controllers/ColorController.js";
+import { createColor, getAllColors, getSingleColor, updateColor, deleteColor } from "../controllers/colorController.js";
 
 import { isLoggedIn } from "../middlewares/isLoggedIn.js";
 import isAdmin from "../middlewares/isAdmin.js";
